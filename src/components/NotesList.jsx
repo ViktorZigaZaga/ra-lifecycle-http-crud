@@ -6,7 +6,7 @@ function NotesList({ notes, onDelete }) {
   
     return (
         <ul className="notes-list">
-            {notes.map((note) => 
+            {notes.map((note, i) => 
                 <li>
                     <Note key={Date.now() + i*3} note={note} onDelete={onDelete} />
                 </li>
